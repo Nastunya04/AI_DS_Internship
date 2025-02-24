@@ -34,7 +34,7 @@ def predict_image(model, image_path, device, class_names):
 def main():
     parser = argparse.ArgumentParser(description='Inference for Image Classification')
     parser.add_argument('--image_path', type=str, required=True, help='Path to input image')
-    parser.add_argument('--model_path', type=str, default='best_model.pth', \
+    parser.add_argument('--model_path', type=str, default='Task2/best_model.pth', \
     help='Path to the trained model')
     parser.add_argument('--num_classes', type=int, default=15, help='Number of classes')
     parser.add_argument('--use_cuda', action='store_true', help='Use CUDA if available')
